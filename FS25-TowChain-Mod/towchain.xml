@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<vehicle type="implement">
+    <storeData>
+        <name>Rusty Tow Chain (Medium)</name>
+        <price>250</price>
+        <dailyUpkeep>0</dailyUpkeep>
+        <brand>MODTOOLS</brand>
+        <category>misc</category>
+        <image>icon.png</image>
+    </storeData>
+
+    <physics>
+        <mass>40</mass>
+        <centerOfMass>0 0 0</centerOfMass>
+    </physics>
+
+    <components>
+        <component centerOfMass="0 0 0" solverIterationCount="8" mass="40">
+            <i3dFile>towChain.i3d</i3dFile>
+        </component>
+    </components>
+
+    <attacherJoints>
+        <attacherJoint node="jointFront" jointType="implement" allowedToFold="false" />
+        <attacherJoint node="jointBack" jointType="implement" allowedToFold="false" />
+    </attacherJoints>
+
+    <dynamicMountAttacherJoints>
+        <dynamicMountAttacherJoint node="jointFront" />
+        <dynamicMountAttacherJoint node="jointBack" />
+    </dynamicMountAttacherJoints>
+
+    <customEnvironment>
+        <script>autoAttach.lua</script>
+    </customEnvironment>
+</vehicle>

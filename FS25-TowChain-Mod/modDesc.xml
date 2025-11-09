@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<modDesc descVersion="90">
+    <title>
+        <en>Tow Chain — Rusty (Medium, Auto-Attach)</en>
+    </title>
+    <description>
+        <en>Medium rusty tow chain with custom chain-like physics scaffolding and auto-attach on PC. Drop this folder into your mods folder.</en>
+    </description>
+    <version>1.0.0.0</version>
+    <author>YourName</author>
+    <iconFilename>icon.png</iconFilename>
+
+    <storeItems>
+        <storeItem xmlFilename="towChain.xml"/>
+    </storeItems>
+</modDesc>
